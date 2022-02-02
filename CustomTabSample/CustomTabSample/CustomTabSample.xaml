@@ -17,6 +17,7 @@
                             ShowText="True"
                             Text="ButtonOne"
                             Orientation="Vertical"/>
+                <RibbonSeparator x:Uid="RibbonSeparator_1"/>
                 <local:NWRibbonButton x:Uid="Button_2" Id="Button_Two"
                             Size="Large"
                             ShowText="True"
