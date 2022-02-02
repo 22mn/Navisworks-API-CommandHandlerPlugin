@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<RibbonControl
+    x:Uid="CustomTabSample" xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows"
+    xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:adwi="clr-namespace:Autodesk.Internal.Windows;assembly=AdWindows"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer">
+
+    <RibbonTab Id="TwentyTwoTab" Title="TwentyTwo Add-Ins">
+        <RibbonPanel x:Uid="RibbonPane1_1">
+            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_1" Title="Sample Button">
+                
+                <local:NWRibbonButton x:Uid="Button_1" Id="Button_One"
+                            Size="Large"
+                            ShowText="True"
+                            Text="ButtonOne"
+                            Orientation="Vertical"/>
+                <local:NWRibbonButton x:Uid="Button_2" Id="Button_Two"
+                            Size="Large"
+                            ShowText="True"
+                            Text="ButtonTwo"
+                            Orientation="Vertical"/>
+
+            </RibbonPanelSource>
+        </RibbonPanel>
+
+        <RibbonPanel x:Uid="RibbonPanel_2">
+            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_2" Title="Sample SplitButton">
+                <local:NWRibbonSplitButton x:Uid="SplitBtn1" Id="Split_Button_1" 
+                                          Size="Large" Orientation="Vertical">
+                    <local:NWRibbonButton x:Uid="Button_3" Id="Button_Three"
+                            Size="Large"
+                            ShowText="True"
+                            Text="ButtonThree"
+                            Orientation="Vertical"/>
+                    <local:NWRibbonButton x:Uid="Button_2" Id="Button_Four"
+                            Size="Large"
+                            ShowText="True"                        
+                            Text="ButtonFour"
+                            Orientation="Vertical"/>
+                </local:NWRibbonSplitButton>
+            </RibbonPanelSource>
+        </RibbonPanel>
+    </RibbonTab>
+    
+</RibbonControl>
